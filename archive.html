@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maria's Archive — Short stories by Maria Zafe</title>
+<meta name="description" content="Read the opening pages of nine contemporary Filipino short stories by Maria Zafe: motherhood, grief, family secrets and hope. Full stories coming to Kindle.">
+<meta property="og:title" content="Maria's Archive — Short stories by Maria Zafe">
+<meta property="og:description" content="Read the opening pages of nine contemporary Filipino short stories by Maria Zafe. Full stories coming to Kindle.">
+<meta property="og:url" content="https://books.mariazafe.com/archive.html">
+<meta property="og:image" content="https://m.media-amazon.com/images/I/71bELIMqhHL._SY500_.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #1B1B3A; --emerald: #0F5257; --oxblood: #6B1E2E; --saffron: #E0A526; --blush: #F3D9D3; --plum: #4A2545; --linen: #F3E6D8;
+    --serif: "Cormorant Garamond", Georgia, serif; --sans: "Jost", system-ui, sans-serif;
+    box-sizing: border-box;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--night); color: var(--linen); font-family: var(--sans); font-size: 1.05rem; line-height: 1.65; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--saffron); outline-offset: 4px; }
+  .wrap { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  .top { position: sticky; top: 0; z-index: 10; background: var(--night); border-bottom: 1px solid rgba(243,230,216,0.15); padding-top: env(safe-area-inset-top, 0px); }
+  .bar { display: flex; justify-content: space-between; align-items: center; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  .logo { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; text-decoration: none; }
+  .menu-btn { font: inherit; background: none; color: var(--saffron); border: 1px solid var(--saffron); padding: 0.3rem 0.9rem; cursor: pointer; }
+  .navlist { list-style: none; margin: 0; padding: 0.25rem 1.25rem 1rem; display: none; flex-direction: column; }
+  .navlist.open { display: flex; }
+  .navlist a { display: block; padding: 0.45rem 0; text-decoration: none; }
+  .navlist a[aria-current="page"] { color: var(--saffron); }
+  @media (min-width: 760px) {
+    .menu-btn { display: none; }
+    .navlist { display: flex !important; flex-direction: row; gap: 1.5rem; padding-bottom: 0.75rem; }
+    .navlist a { padding: 0; }
+  }
+
+  [data-page] { display: none; }
+  [data-page].active { display: block; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 12vw, 5.5rem); line-height: 1; margin: 0 0 1rem; }
+  h2 { font-family: var(--serif); font-weight: 600; font-size: 2.2rem; line-height: 1.1; margin: 2.5rem 0 1.25rem; }
+  .lead { font-family: var(--serif); font-style: italic; font-size: 1.5rem; line-height: 1.4; max-width: 32rem; margin: 0; color: var(--blush); }
+  .hero { padding: 3rem 0 2.5rem; border-bottom: 1px solid rgba(243,230,216,0.2); }
+  .spines { display: flex; gap: 6px; margin-bottom: 1.5rem; }
+  .spines i { display: block; width: 14px; height: 5rem; }
+
+  .books { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+  @media (min-width: 760px) { .books { grid-template-columns: repeat(2, 1fr); } }
+  .book { display: flex; flex-direction: column; padding: 1.5rem; border-left: 10px solid rgba(0,0,0,0.25); gap: 1.25rem; }
+  .bcover { width: 9rem; aspect-ratio: 313 / 500; object-fit: cover; display: block; box-shadow: 0 12px 28px rgba(0,0,0,0.45); }
+  .binfo { display: flex; flex-direction: column; flex: 1; }
+  @media (max-width: 759px) { .book { flex-direction: row; align-items: flex-start; } .bcover { width: 7rem; flex-shrink: 0; } }
+  .book h3 { font-family: var(--serif); font-weight: 600; font-size: 1.9rem; line-height: 1.1; margin: 0 0 0.5rem; }
+  .book .kind { font-size: 0.9rem; opacity: 0.8; margin: 0 0 0.75rem; }
+  .book p { margin: 0 0 1rem; }
+  .acts { margin-top: auto; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .btn { display: inline-block; padding: 0.55rem 1rem; font-weight: 500; font-size: 0.95rem; text-decoration: none; border: 1px solid currentColor; }
+  .btn.solid { background: var(--linen); color: var(--night); border-color: var(--linen); }
+  .navy { background: #26306A; } .emerald { background: var(--emerald); } .oxblood { background: var(--oxblood); } .plum { background: var(--plum); }
+
+  .soon { list-style: none; padding: 0; margin: 0; }
+  .soon li { display: flex; justify-content: space-between; gap: 0.25rem 1rem; flex-wrap: wrap; padding: 1rem 0; border-top: 1px solid rgba(243,230,216,0.2); }
+  .soon li:last-child { border-bottom: 1px solid rgba(243,230,216,0.2); }
+  .soon .t { font-family: var(--serif); font-size: 1.6rem; }
+  .soon .when { color: var(--saffron); }
+  .soon p { flex-basis: 100%; margin: 0; opacity: 0.85; }
+
+  .panel { background: var(--blush); color: var(--night); padding: 2rem 1.5rem; margin: 2.5rem 0; }
+  .panel h2 { margin-top: 0; }
+  .panel p { max-width: 34rem; }
+  .panel .btn { border-color: var(--night); }
+  .panel button.btn { background: var(--night); color: var(--linen); font: inherit; font-weight: 500; padding: 0.65rem 1.2rem; cursor: pointer; }
+  .prose p { max-width: 36rem; }
+  .themes { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
+  .themes li { border: 1px solid var(--saffron); color: var(--saffron); padding: 0.25rem 0.85rem; }
+
+  form { display: grid; gap: 0.9rem; max-width: 32rem; margin-top: 1rem; text-align: left; }
+  form label { display: grid; gap: 0.3rem; font-weight: 500; }
+  form input, form select, form textarea { font: inherit; padding: 0.65rem 0.8rem; border: 2px solid #1B1B3A; border-radius: 8px; background: #fff; color: #1B1B3A; width: 100%; }
+  form textarea { min-height: 6rem; resize: vertical; }
+  .msg { font-weight: 700; color: #0F5257; margin: 0; min-height: 1.4rem; }
+  .fine { font-size: 0.85rem; opacity: 0.8; margin: 0; }
+
+  footer { padding: 2rem 0 3rem; font-size: 0.9rem; opacity: 0.75; border-top: 1px solid rgba(243,230,216,0.15); margin-top: 2rem; }
+
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.8rem; color: var(--saffron); margin: 0 0 0.5rem; }
+  .book { display: flex; flex-direction: column; padding: 1.5rem; border-left: 10px solid rgba(0,0,0,0.25); gap: 1.25rem; }
+  .bcover { width: 9rem; aspect-ratio: 313 / 500; object-fit: cover; display: block; box-shadow: 0 12px 28px rgba(0,0,0,0.45); }
+  .binfo { display: flex; flex-direction: column; flex: 1; }
+  @media (max-width: 759px) { .book { flex-direction: row; align-items: flex-start; } .bcover { width: 7rem; flex-shrink: 0; } }
+  .textcover { display: flex; flex-direction: column; justify-content: space-between; padding: 1rem 0.8rem; background: linear-gradient(160deg, #3A2F6B, #1B1B3A 70%); border: 1px solid rgba(243,230,216,0.3); font-family: var(--serif); }
+  .tc-title { font-size: 1.35rem; font-weight: 600; line-height: 1.05; color: var(--linen); }
+  .tc-author { font-size: 0.85rem; letter-spacing: 0.08em; color: var(--saffron); }
+  .promos { display: grid; gap: 1.25rem; margin: 3rem 0 0; }
+  @media (min-width: 760px) { .promos { grid-template-columns: 1fr 1fr; } }
+  .promos .promo { margin: 0; }
+  .promo { margin: 3rem 0 0; padding: 2rem 1.5rem; border: 1px solid var(--saffron); }
+  .promo h2 { margin: 0 0 0.5rem; }
+  .promo p { max-width: 32rem; }
+  .panel button.btn { background: var(--night); color: var(--linen); font: inherit; font-weight: 500; padding: 0.65rem 1.2rem; cursor: pointer; }
+  button.btn { font: inherit; cursor: pointer; }
+  /* mood picker */
+  .moods { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1.25rem; }
+  .moods button { font: inherit; background: none; color: var(--linen); border: 1px solid rgba(243,230,216,0.4); padding: 0.45rem 0.9rem; cursor: pointer; }
+  .moods button[aria-pressed="true"] { background: var(--saffron); color: var(--night); border-color: var(--saffron); }
+  .pick { min-height: 6rem; padding: 1.25rem 1.5rem; background: rgba(243,230,216,0.06); border-left: 4px solid var(--saffron); }
+  .pick h3 { font-family: var(--serif); font-size: 1.7rem; margin: 0 0 0.25rem; }
+  .pick p { margin: 0 0 0.75rem; }
+  /* timeline */
+  .timeline { list-style: none; padding: 0; margin: 0; }
+  .timeline li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; padding: 1.1rem 0; border-top: 1px solid rgba(243,230,216,0.2); }
+  .timeline li:last-child { border-bottom: 1px solid rgba(243,230,216,0.2); }
+  .timeline .when { color: var(--saffron); font-weight: 500; }
+  .timeline .t { font-family: var(--serif); font-size: 1.6rem; line-height: 1.1; display: block; }
+  .timeline p { margin: 0.25rem 0 0; opacity: 0.85; }
+  .wip { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+  @media (min-width: 760px) { .wip { grid-template-columns: 1fr 1fr; } }
+  .wip article { padding: 1.5rem; background: rgba(243,230,216,0.06); border-top: 4px solid var(--saffron); }
+  .wip h3 { font-family: var(--serif); font-size: 2rem; margin: 0; }
+  .wip .status { display: inline-block; margin: 0.4rem 0 0.75rem; font-size: 0.85rem; border: 1px solid var(--saffron); color: var(--saffron); padding: 0.1rem 0.6rem; }
+  .wip p { margin: 0 0 0.6rem; }
+  details { border-top: 1px solid rgba(243,230,216,0.2); padding: 1rem 0; }
+  details:last-of-type { border-bottom: 1px solid rgba(243,230,216,0.2); }
+  summary { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; cursor: pointer; }
+  details p { margin: 0.6rem 0 0; max-width: 40rem; }
+  .social { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; padding: 0; margin: 0; }
+  .fiction { font-size: 0.85rem; opacity: 0.7; max-width: 40rem; }
+  .qs { padding-left: 1.2rem; max-width: 40rem; }
+  .qs li { margin-bottom: 0.6rem; }
+  .legal h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; margin: 1.75rem 0 0.4rem; }
+  .legal a, details a, footer a { color: var(--saffron); }
+  .sub { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; margin: 2.5rem 0 0.75rem; }
+  .qs a, .prose a { color: var(--saffron); }
+
+  .toc { columns: 2 14rem; padding-left: 1.2rem; margin: 1rem 0 0; }
+  .toc li { margin-bottom: 0.35rem; break-inside: avoid; }
+  .genre-head { margin-top: 3.5rem; padding-left: 1rem; border-left: 4px solid var(--saffron); }
+  .g-emerald { border-color: #3FA7A0; } .g-oxblood { border-color: #C0475E; } .g-plum { border-color: #A05A98; }
+  .genre-head h2 { margin: 0; }
+  .genre-head p { margin: 0.25rem 0 0; opacity: 0.85; }
+  .story { margin: 2rem 0 0; padding: 2rem 1.5rem; background: var(--linen); color: var(--night); scroll-margin-top: 5rem; }
+  .story .eyebrow { color: var(--oxblood); }
+  .story h3 { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 7vw, 2.8rem); line-height: 1.05; margin: 0 0 0.4rem; }
+  .story .about { font-style: italic; font-family: var(--serif); font-size: 1.2rem; margin: 0 0 1.5rem; opacity: 0.85; }
+  .storytext { font-family: var(--serif); font-size: 1.25rem; line-height: 1.7; max-width: 38rem; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  .storytext p { margin: 0 0 0.9rem; text-indent: 1.5em; }
+  .storytext p.no-indent { text-indent: 0; }
+  .storyfoot { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(27,27,58,0.2); display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; justify-content: space-between; font-size: 0.95rem; }
+  .storyfoot a { color: var(--oxblood); }
+  .tag { font-size: 0.85rem; font-weight: 500; background: var(--night); color: var(--linen); padding: 0.15rem 0.6rem; }
+  .tag::after { content: " · full story coming to Kindle"; font-weight: 400; opacity: 0.85; }
+  @media print { main, header { display: none !important; } body::before { content: "Read Maria's Archive at books.mariazafe.com/archive.html"; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html#home">Maria Zafe</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navlist">Menu</button>
+  </div>
+  <nav aria-label="Main">
+    <ul class="navlist wrap" id="navlist">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#books">Books</a></li>
+      <li><a href="stories.html">Free stories</a></li>
+      <li><a href="archive.html" aria-current="page">Archive</a></li>
+      <li><a href="index.html#soon">Coming soon</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#readers">For readers</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap" id="top">
+  <section class="hero">
+    <p class="eyebrow">Free preview</p>
+    <h1>Maria's Archive</h1>
+    <p class="lead">Nine short stories about love, loss, resilience and the people who keep going. Read the opening pages free, no sign-up needed. The full stories are coming to Kindle.</p>
+    <ol class="toc">
+      <li><a href="#bare-minimum">The Bare Minimum</a></li>
+      <li><a href="#let-them">Let Them</a></li>
+      <li><a href="#after-waters">After the Waters</a></li>
+      <li><a href="#weight-waiting">The Weight of Waiting</a></li>
+      <li><a href="#garden">The Garden of Remembrance</a></li>
+      <li><a href="#last-train">The Last Train Home</a></li>
+      <li><a href="#forgotten-faces">Forgotten Faces</a></li>
+      <li><a href="#shadows">Shadows of Gratitude</a></li>
+      <li><a href="#christmas">Christmas Proposal</a></li>
+    </ol>
+    <p class="fiction" style="margin-top:1.25rem">Want complete stories to read right now? The <a href="stories.html" style="color:var(--saffron)">Free stories</a> page has five, illustrated and free.</p>
+  </section>
+
+    <section class="genre-head g-emerald">
+      <h2>Contemporary Drama</h2>
+      <p>Family tension, class struggle, survival and the weight of motherhood.</p>
+    </section>
+    <article class="story" id="bare-minimum">
+      <p class="eyebrow">Contemporary Drama</p>
+      <h3>The Bare Minimum</h3>
+      <p class="about">Motherhood exhaustion, unappreciated labor, family tension and reconciliation.</p>
+      <div class="storytext">
+          <p class="no-indent">The kitchen was spotless. Again.</p>
+          <p>Sarah stood at the sink, her hands raw from scrubbing, her back aching from a double shift at the hospital. It was past midnight. She'd been awake for nineteen hours.</p>
+          <p>"Mom?" Ethan's voice came from the doorway. Her seventeen-year-old son, phone in hand, barely looking up. "We're out of milk again."</p>
+          <p>Sarah closed her eyes. Counted to five. "I'll get some tomorrow."</p>
+          <p>"That's what you said yesterday."</p>
+          <p>Something inside her cracked. Not broke—she'd been breaking for years. This was different. This was the moment she decided she was done being invisible.</p>
+          <p>"Ethan." Her voice came out steady. Cold. "Do you know what I did today?"</p>
+          <p>He finally looked up from his phone, sensing the shift in the air...</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <article class="story" id="let-them">
+      <p class="eyebrow">Contemporary Drama</p>
+      <h3>Let Them</h3>
+      <p class="about">Class struggle, humiliation, career obstacles and proving yourself.</p>
+      <div class="storytext">
+          <p class="no-indent">Rita counted the coins in her palm one more time. Seventeen pesos. She needed eighteen to get home.</p>
+          <p>The jeepney driver was staring at her, waiting. Behind her, other passengers were getting impatient.</p>
+          <p>"Ate, bayad na," someone said from the back.</p>
+          <p>Her face burned. This was the third time this month. The third time she'd miscounted, misjudged, miscalculated how much she'd need to survive until payday.</p>
+          <p>"Sorry po," she mumbled, climbing down from the jeepney. She'd walk. It was only five kilometers. She'd walked farther before.</p>
+          <p>As the jeepney pulled away, she heard them laughing. Not loud. Not cruel. Just... that knowing laugh. The kind that says: people like you will always be counting coins.</p>
+          <p>Rita opened her phone as she walked. Her spreadsheet app. The one with tabs labeled "Budget," "Savings," "Five-Year Plan," and the one nobody else could see: "Let Them."</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <article class="story" id="after-waters">
+      <p class="eyebrow">Contemporary Drama</p>
+      <h3>After the Waters</h3>
+      <p class="about">Post-disaster trauma, loss and survival inside a relief center.</p>
+      <div class="storytext">
+          <p class="no-indent">The relief center smelled of wet concrete and fear.</p>
+          <p>Maria sat on a plastic chair, her daughter Bella asleep in her lap, and waited. The flood had come fast—too fast. One moment they were eating dinner, the next they were on the roof, watching their lives float away in murky brown water.</p>
+          <p>Carlos had gone back. Their neighbor, Mang Tomas, was elderly and couldn't climb. Carlos had promised he'd be right back.</p>
+          <p>That was six hours ago.</p>
+          <p>"Maria?" A volunteer approached, her face gentle. Too gentle. The kind of gentle that precedes bad news. "They're still searching. But I need you to understand—"</p>
+          <p>"He's coming back." Maria's voice didn't waver. Couldn't waver. If she wavered, she'd break. "He promised."</p>
+          <p>Around her, the center was filling with stories. A woman weeping into her phone—her mother swept away. A man staring at the wall, silent, his family still missing...</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <article class="story" id="weight-waiting">
+      <p class="eyebrow">Contemporary Drama</p>
+      <h3>The Weight of Waiting</h3>
+      <p class="about">Pregnancy anxiety, relationship strain and emotional uncertainty.</p>
+      <div class="storytext">
+          <p class="no-indent">Claire stared at the pregnancy test on the bathroom counter, her hands trembling. Two pink lines. Clear as day.</p>
+          <p>"Babe?" Her husband Daniel called from the bedroom. "You okay in there?"</p>
+          <p>She couldn't answer. Her throat had closed up. They'd been trying for months, but now that it was real—</p>
+          <p>"Claire?" The door creaked open. Daniel's face appeared, concerned, then his eyes dropped to the test in her hand. "Is that…?"</p>
+          <p>"I'm pregnant." The words felt foreign in her mouth.</p>
+          <p>His face broke into the widest smile she'd ever seen. He rushed forward, wrapping her in his arms. "This is amazing! This is—Claire, why are you crying?"</p>
+          <p>"I don't know," she sobbed into his shoulder. "I'm happy. I'm terrified. I don't know what I'm doing."</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <section class="genre-head g-oxblood">
+      <h2>Grief and Healing</h2>
+      <p>Loss, closure and learning to live again.</p>
+    </section>
+    <article class="story" id="garden">
+      <p class="eyebrow">Grief and Healing</p>
+      <h3>The Garden of Remembrance</h3>
+      <p class="about">A daughter navigates the loss of her mother through support groups and gardening.</p>
+      <div class="storytext">
+          <p class="no-indent">Maya found the letter three months after her mother's funeral. It was tucked inside the gardening journal, between pages of rose cultivation notes and weather observations.</p>
+          <p>"To be opened when you're ready to listen."</p>
+          <p>Her mother's handwriting. Unmistakable.</p>
+          <p>Maya sat in what used to be her mother's garden—now overgrown, neglected, filled with weeds and withered flowers. She couldn't bring herself to touch it. Couldn't bring herself to continue what her mother had started.</p>
+          <p>Because if she continued, it meant accepting that her mother was gone. And she wasn't ready for that. Not yet.</p>
+          <p>She opened the letter with shaking hands...</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <article class="story" id="last-train">
+      <p class="eyebrow">Grief and Healing</p>
+      <h3>The Last Train Home</h3>
+      <p class="about">Father and son, regret, going home and forgiveness.</p>
+      <div class="storytext">
+          <p class="no-indent">Michael's phone buzzed at 3 AM. Singapore time. He knew, even before looking at the screen, that his father was dying.</p>
+          <p>"You need to come home." His sister's voice was steady, but he could hear the tears underneath. "The doctors say... maybe a week. Maybe less."</p>
+          <p>Three years. He'd been gone for three years. Three years since the fight. Three years since he'd said words he could never take back: "I don't need your advice. I never did. I'm not you, and I never will be."</p>
+          <p>His father had just stood there. Silent. Wounded. And Michael had walked out. Had taken the job in Singapore. Had built a whole life around not going back.</p>
+          <p>Now he sat in his apartment—pristine, empty, successful—and realized he'd been running from the wrong thing...</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <article class="story" id="forgotten-faces">
+      <p class="eyebrow">Grief and Healing</p>
+      <h3>Forgotten Faces</h3>
+      <p class="about">Quiet grief, loneliness and rediscovering the people who stay.</p>
+      <div class="storytext">
+          <p class="no-indent">Alex ran into him again on the morning run. Literally ran into him this time.</p>
+          <p>"Whoa! Sorry!" The guy from apartment 3B steadied Alex with both hands. "You okay?"</p>
+          <p>Alex looked up, tomato-red face from running, completely drenched in sweat. "Yeah, I—I wasn't paying attention."</p>
+          <p>"Clearly." He smiled. That same knowing smile. "You still don't remember me, do you?"</p>
+          <p>Alex wanted to lie. Wanted to pretend. But something about the way he looked—patient, understanding, a little sad—made lying feel wrong.</p>
+          <p>"I'm sorry. I really am. There's just—there's a gap. After the accident. After my family—" Alex's voice caught.</p>
+          <p>Understanding flooded the guy's face. "Oh. Alex, I heard about that. I'm so sorry..."</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <section class="genre-head g-plum">
+      <h2>Psychological and Family Drama</h2>
+      <p>The hidden truths that bind and break families.</p>
+    </section>
+    <article class="story" id="shadows">
+      <p class="eyebrow">Psychological and Family Drama</p>
+      <h3>Shadows of Gratitude</h3>
+      <p class="about">Manipulation, betrayal, parental secrets and breaking free.</p>
+      <div class="storytext">
+          <p class="no-indent">I zipped up the last suitcase, making sure Sofia had everything she'd need for her island getaway. Anyone watching me fuss over these details would think I'm crazy. But they don't understand the debt I carry—the one I owe to the Mendoza family, especially to Carmen, Sofia's mother.</p>
+          <p>After my mother died, Carmen Mendoza became my lifeline. My father? He was too lost in his own world to notice I existed. Carmen gave me shelter, food, stability. But nothing comes free. She asked one thing in return: become Sofia's best friend, her constant companion, and report back anything unusual in her daughter's life.</p>
+          <p>I agreed. What choice did I have?</p>
+          <p>Sofia never knew about our arrangement. She can never know. Just like she can never know about my family's secrets.</p>
+          <p>Sometimes I wonder if Carmen's generosity was too much. She treated me like a daughter—gave me a life most people only dream about. She seemed like an angel. You know the kind? The fallen ones...</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+    <section class="genre-head g-saffron">
+      <h2>Uplifting Fiction</h2>
+      <p>Hope, kindness and the courage to care.</p>
+    </section>
+    <article class="story" id="christmas">
+      <p class="eyebrow">Uplifting Fiction</p>
+      <h3>Christmas Proposal</h3>
+      <p class="about">Corporate outreach, generosity, teamwork and community.</p>
+      <div class="storytext">
+          <p class="no-indent">Carol took a deep breath and looked at Daniel across the conference room table. They'd worked on this proposal for three weeks. Three weeks of late nights, budget recalculations, and arguments about what was realistic versus what was right.</p>
+          <p>"You ready?" Daniel asked, organizing his notes.</p>
+          <p>"No." Carol smiled. "But when has that ever stopped us?"</p>
+          <p>The board filed in. Mr. Reyes, the CEO, took his seat at the head of the table. His expression was already skeptical.</p>
+          <p>"Carol. Daniel. I understand you have a proposal regarding our annual Christmas event?" His tone suggested he'd already made up his mind. "I'll be honest—we've allocated 5.5 million pesos. That's a significant budget increase from last year."</p>
+          <p>"Actually, sir," Carol stood, projector clicking on behind her. "We think we can do better for less..."</p>
+      </div>
+      <div class="storyfoot">
+        <span class="tag">Opening pages</span>
+        <a href="#top">Back to all stories</a>
+      </div>
+    </article>
+
+  <section class="panel">
+    <h2>Want the full stories?</h2>
+    <p>Get an email the day these stories come out in full, and when new free stories go up. You can also tell me which one you want first.</p>
+    <form data-site="books" data-type="Archive reader" data-ok="Thank you for reading! You're on the list.">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Which story do you want first? (optional)<select name="favorite"><option value="">Choose one</option><option>The Bare Minimum</option><option>Let Them</option><option>After the Waters</option><option>The Weight of Waiting</option><option>The Garden of Remembrance</option><option>The Last Train Home</option><option>Forgotten Faces</option><option>Shadows of Gratitude</option><option>Christmas Proposal</option></select></label>
+        <div hidden><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div><button class="btn" type="submit">Keep me posted</button></div>
+        <p class="msg" role="status" aria-live="polite"></p>
+        <p class="fine">Only book news. No spam. See the <a href="index.html#privacy">Privacy notice</a>.</p>
+      </form>
+  </section>
+
+  <section class="promo">
+    <p class="eyebrow">Want more?</p>
+    <h2>Full-length books on Kindle</h2>
+    <p>The Last Honest Woman, Stay In Your Lane, Kahit Maliit and GC Name Pending are out now.</p>
+    <a class="btn solid" href="index.html#books">See the books</a>
+  </section>
+
+  <p class="fiction" style="margin-top:2rem">All stories are works of fiction. Names, characters and events are imagined, and any resemblance to real people is coincidental.</p>
+</main>
+
+<footer class="wrap">© 2026 Maria Zafe. All rights reserved. · <a href="mailto:books@mariazafe.com">books@mariazafe.com</a> · <a href="index.html#terms">Terms of Use</a> · <a href="index.html#privacy">Privacy notice</a></footer>
+
+<script>
+  ['copy','cut','contextmenu','dragstart','selectstart'].forEach(ev => document.addEventListener(ev, e => { if (e.target.closest && e.target.closest('.storytext')) e.preventDefault(); }));
+  document.addEventListener('keydown', e => { const k = (e.key || '').toLowerCase(); if ((e.ctrlKey || e.metaKey) && ['c','a','s','p','u'].includes(k)) e.preventDefault(); });
+
+  const FORM_URL = 'https://script.google.com/macros/s/AKfycbx-KdWFYRFkG878tpbqRuQXYbY1EqZ1eumcZVtSSwnCbBLq0RS70XGSWJwNifcYw0OV/exec';
+  document.querySelectorAll('form[data-site]').forEach(f => f.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = f.querySelector('[type=submit]'), msg = f.querySelector('.msg');
+    const label = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Sending...'; msg.textContent = '';
+    const data = new URLSearchParams(new FormData(f));
+    data.append('form', f.dataset.site); data.append('type', f.dataset.type || '');
+    try { await fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body: data }); f.reset(); msg.textContent = f.dataset.ok; }
+    catch (err) { msg.textContent = 'Something went wrong. Please try again or email books@mariazafe.com.'; }
+    btn.disabled = false; btn.textContent = label;
+  }));
+  const navlist = document.getElementById('navlist'), menuBtn = document.querySelector('.menu-btn');
+  menuBtn.addEventListener('click', () => { const o = navlist.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', o); });
+</script>
+</body>
+</html>
